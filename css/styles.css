@@ -19,5 +19,6 @@
     text-align: center;
 }
 .alin-media{
-    vertical-align: middle;
-}
+    display: flex;
+    align-items: center;
+ }
