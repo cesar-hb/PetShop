@@ -41,3 +41,13 @@
       password2ErrorMessage.style.display = "none";
     }
   });
+
+
+  const rut = document.getElementById("rut");
+  const nombres = document.getElementById("nombres");
+  const apellidos = document.getElementById("apellidos");
+  const correo = document.getElementById("correo");
+  const direccion = document.getElementById("direccion");
+  const subscripcion = document.getElementById("subscripcion");
+
+  
