@@ -55,25 +55,34 @@
             </div>
             <div class="mb-3">
               <label for="nombres" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombres">
+              <input required type="text" class="form-control" id="nombres">
               <div class="invalid-feedback">
                 El campo Nombre es obligatorio
               </div>
             </div>
             <div class="mb-3">
               <label for="apellidos" class="form-label">Apellidos</label>
-              <input type="text" class="form-control" 
+              <input required type="text" class="form-control" 
                   id="apellidos">
+              <div class="invalid-feedback">
+                El campo Apellidos es obligatorio
+              </div>
             </div>
             
             <div class="mb-3">
               <label for="correo" class="form-label">Correo</label>
-              <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+              <input required type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+              <div class="invalid-feedback">
+                El campo Correo es obligatorio
+              </div>
             </div>
 
             <div class="mb-3">
               <label for="direccion" class="form-label">Dirección</label>
-              <textarea class="form-control" id="direccion" rows="3"></textarea>
+              <textarea required class="form-control" id="direccion" rows="3"></textarea>
+              <div class="invalid-feedback">
+                El campo Dirección es obligatorio
+              </div>
             </div>
 
             <div class="form-check">
