@@ -28,17 +28,20 @@
     color:dodgerblue;
 }
 
-
 .pad{
     padding: 5%;
 }
 .pad-b{
     padding: 2%;
 }
-
+input[type="text"], input[type="password"], input[type="email"], input[type="file"], textarea {
+    
+    border-width: 3px !important;
+  }
+/*
 div {
     border: 1px solid blue;
-}/*
+}
 p{
     border: 1px solid red;
 }*/
