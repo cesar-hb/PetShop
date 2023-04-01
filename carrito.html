@@ -19,12 +19,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
-              <a class="nav-link" href="registro.html">Registrarse</a>
-              <a class="nav-link" href="nosotros.html">Nosotros</a>
-              <a class="nav-link" href="ingreso.html" tabindex="-1">Ingreso</a>
-              <a class="nav-link disabled" href="cuenta.html" tabindex="-1" aria-disabled="true">Cuenta</a>
-              <a class="nav-link disabled" href="historial.html" tabindex="-1" aria-disabled="true">Historial de compras</a>
+              <a class="nav-link" href="inicioCliente.html">Inicio</a>
+              <a class="nav-link" href="nosotrosCliente.html">Nosotros</a>
+              <a class="nav-link" href="cuenta.html" tabindex="-1">Cuenta</a>
+              <a class="nav-link" href="historial.html" tabindex="-1">Historial de compras</a>
             </div>
           </div>
         </div>
@@ -111,9 +109,31 @@
             </section>
         </div>
     </main>
-    <div class="container-fluid col text-center">
-      <a href="" class="btn btn-primary">Comprar</a>
+    
+    <div class="container-fluid text-center">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Terminar la compra
+      </button>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Compra completada</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Presione el boton para volver al inicio.
+          </div>
+          <div class="modal-footer">
+            <a href="inicioCliente.html"><button type="button" class="btn btn-primary">Volver al inicio</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
     <!-- Footer -->
     <footer id="footer" class="position-fixed bottom-0 start-50 translate-middle-x">
       <br>

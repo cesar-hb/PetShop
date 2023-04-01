@@ -42,12 +42,13 @@
     }
   });
 
+  const myModal = document.getElementById('myModal')
+  const myInput = document.getElementById('myInput')
 
-  const rut = document.getElementById("rut");
-  const nombres = document.getElementById("nombres");
-  const apellidos = document.getElementById("apellidos");
-  const correo = document.getElementById("correo");
-  const direccion = document.getElementById("direccion");
-  const subscripcion = document.getElementById("subscripcion");
+  myModal.addEventListener('shown.bs.modal', () => {
+    myInput.focus()
+  })
+  
 
   
+
