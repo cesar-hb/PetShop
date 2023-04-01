@@ -21,17 +21,72 @@
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="inicio.html">Inicio</a>
               <a class="nav-link" href="nosotros.html">Nosotros</a>
-              <a class="nav-link disabled" href="cuenta.html" tabindex="-1" aria-disabled="true">Cuenta</a>
-              <a class="nav-link disabled" href="historial.html" tabindex="-1" aria-disabled="true">Historial de compras</a>
+              <a class="nav-link" href="cuenta.html" tabindex="-1" >Cuenta</a>
+              <a class="nav-link" href="historial.html" tabindex="-1" >Historial de compras</a>
               <a class="nav-link" href="inicio.html" tabindex="-1">Cerrar Sesion</a>
             </div>
           </div>
         </div>
     </nav>
 
+    <div class="container-fluid">
+      <h2>
+        &nbsp&nbsp&nbspMis compras anteriores
+      </h2>
+    </div>
+
+    <div class="container-fluid">
+      <div class="justify-content-center pad">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Nro. Boleta</th>
+              <th scope="col">Fecha Venta</th>
+              <th scope="col">Fecha Despacho</th>
+              <th scope="col">Fecha Entrega</th>
+              <th scope="col">Monto total</th>
+              <th scope="col">Estado actual</th>
+              <th scope="col">Opciones</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">322</th>
+              <td>15/03/22</td>
+              <td>15/03/22</td>
+              <td>19/03/22</td>
+              <td>$33.000</td>
+              <td>Entregado</td>
+              <td><a href="">Ver Detalle</a></td>
+            </tr>
+            <tr>
+              <th scope="row">322</th>
+              <td>15/03/22</td>
+              <td>15/03/22</td>
+              <td>19/03/22</td>
+              <td>$33.000</td>
+              <td>Entregado</td>
+              <td><a href="">Ver Detalle</a></td>
+            </tr>
+            <tr>
+              <th scope="row">322</th>
+              <td>15/03/22</td>
+              <td>15/03/22</td>
+              <td>19/03/22</td>
+              <td>$33.000</td>
+              <td>Entregado</td>
+              <td><a href="">Ver Detalle</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
     <!-- Footer -->
-    <footer id="footer">
-      <div class="container text-center">
+    <footer id="footer" class="position-fixed bottom-0 start-50 translate-middle-x">
+      <br>
+      <div class="container-fluid text-center align-middle">
         <p>
           <a href="#">Volver arriba</a>
         &nbsp;&nbsp;
@@ -57,6 +112,7 @@
         Dirección:  Moneda 627, Santiago
       </p>
       </div>
+      <br>
     </footer>
 
     <!-- Bootstrap y Popper (deben ir al final del body)-->
