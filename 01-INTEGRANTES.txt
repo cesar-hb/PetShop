@@ -1,0 +1,9 @@
+Grupo 19
+Seccion 009D
+
+Nombres:
+	Iván Ahumada
+	Cesar Henríquez
+	Victor Barrientos
+
+https://github.com/cesar-hb/PetShop.git
