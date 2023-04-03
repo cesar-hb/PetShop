@@ -38,14 +38,8 @@
         
         <div class="row justify-content-center">
           <div class="col-sm-12 col-md-4" id="datos">
-
-            <div class="mb-3">
-                <label for="idUsuario" class="form-label">ID Producto:</label>
-                <input 
-                    type="text" class="form-control" 
-                    id="disabledTextInput" placeholder="0001">
-            </div>
-            <div>
+            <div class="col-12">
+              <div>
                 <label for="idUsuario" class="form-label">Categoría:</label>
                 <select class="form-select" aria-label="Default select example">
                     <option selected>...</option>
@@ -53,61 +47,40 @@
                     <option value="2">Gatos</option>
                     <option value="3">Otros</option>
                 </select>
-            </div>
-            
-
-            <div class="mb-3">
-              <label for="rut" class="form-label">Nombre</label>
-              <input 
-                  type="text" class="form-control" 
-                  id="disabledTextInput" placeholder="Saco alimento Master Dog">
-              <div class="invalid-feedback">
-                El campo Nombre es obligatorio
               </div>
-            </div>
-            
-            <div class="mb-3">
-              <label for="descripcion" class="form-label">Descripcion:</label>
-              <textarea class="form-control" id="descripcion" rows="3">Saco de 18 kilos, sabor carne, adultos</textarea>
-            </div>
-
-            <div class="mb-3">
-              <label for="precio" class="form-label">Precio:</label>
-              <input type="text" class="form-control" id="precio" placeholder="$23.990">
-              <div class="invalid-feedback">
-                El campo Precio es obligatorio
+              
+              <div>
+                <label for="idUsuario" class="form-label">Nombre:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>...</option>
+                    <option value="1">Saco alimento Master Dog</option>
+                    <option value="2">Saco alimento Dog Chow</option>
+                    <option value="3">Saco alimento Cannes</option>
+                </select>
               </div>
-            </div>
-            <div class="mb-3">
-              <label for="dsctoSubs" class="form-label">Descuento Subscriptor:</label>
-              <input type="text" class="form-control" 
-                  id="dsctoSubs" placeholder="$1200">
-            </div>
-            
-            <div class="mb-3">
-              <label for="dsctoOferta" class="form-label">Descuento por Oferta:</label>
-              <input type="email" class="form-control" id="dsctoOferta" placeholder="$1000">
-            </div>
-          
-          </div>
+              
+              <div class="mb-3">
+                <label for="precio" class="form-label">Cantidad:</label>
+                <input type="text" class="form-control" id="precio" placeholder="$23.990">
+                <div class="invalid-feedback">
+                  El campo Cantidad es obligatorio
+                </div>
+              </div>
+            </div> 
 
           <!-- foto cliente -->
-          <div class=" col-sm-12 col-md-4 text-center " id="foto">
+            <div class=" col-sm-12 col-md-4" id="foto">
 
-              <img class="tam" src="..." alt="">
-              <br><br>
-              <div class="mb-3">
-                <input class="form-control" type="file" id="file">
-              </div>
+                <img class="tam" src="..." alt="">
+                <br><br>
 
-          </div>
+            </div>
         </div>
 
         <div class="row" id="botones">
           <div class="col text-center">
-            <a href="mantenedorUsuarios.html" type="submit" class="btn btn-primary" >Guardar</a>
+            <a href="mantenedorBodega.html" type="submit" class="btn btn-primary" >Agregar</a>
             <button type="reset" class="btn btn-primary">Nuevo</button>
-            <button type="reset" class="btn btn-primary">Eliminar</button>
           </div>
         </div>
       </div>
