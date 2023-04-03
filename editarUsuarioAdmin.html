@@ -45,14 +45,29 @@
                 <label for="idUsuario" class="form-label">ID Usuario:</label>
                 <input 
                     type="text" class="form-control" 
-                    id="disabledTextInput" placeholder="0001">
+                    id="disabledTextInput" placeholder="0001" disabled>
             </div>
+            <div class="row justify-content-center">
+                <div class="form-check" style="width: 50%; display:inline-block">
+                    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled" checked>
+                    <label class="form-check-label" for="flexRadioDisabled">
+                        Usuario
+                    </label>
+                </div>
+                <div class="form-check" style="width: 50%; display:inline-block">
+                    <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioDisabled">
+                    <label class="form-check-label" for="flexRadioDisabled">
+                        Adminstrador
+                    </label>
+                </div>
+            </div>
+            
 
             <div class="mb-3">
               <label for="rut" class="form-label"></label>
               <input 
                   type="text" class="form-control" 
-                  id="disabledTextInput" aria-describedby="rutHelp" placeholder="12.345.678-9">
+                  id="disabledTextInput" aria-describedby="rutHelp" placeholder="12.345.678-9" disabled>
               <div id="rutHelp" class="form-text">
                 Escribe el RUT sin puntos y con guión.
               </div>
@@ -63,7 +78,7 @@
 
             <div class="mb-3">
               <label for="nombres" class="form-label">Nombre</label>
-              <input type="text" class="form-control" id="nombres" placeholder="Homer">
+              <input type="text" class="form-control" id="nombres" placeholder="Ivan">
               <div class="invalid-feedback">
                 El campo Nombre es obligatorio
               </div>
@@ -71,17 +86,17 @@
             <div class="mb-3">
               <label for="apellidos" class="form-label">Apellidos</label>
               <input type="text" class="form-control" 
-                  id="apellidos" placeholder="Simpson">
+                  id="apellidos" placeholder="Ahumada">
             </div>
             
             <div class="mb-3">
               <label for="correo" class="form-label">Correo</label>
-              <input type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+              <input type="email" class="form-control" id="correo" placeholder="ivanazo@gmail.com">
             </div>
 
             <div class="mb-3">
               <label for="direccion" class="form-label">Dirección</label>
-              <textarea class="form-control" id="direccion" rows="3"></textarea>
+              <textarea class="form-control" id="direccion" rows="3" placeholder="calle falsa 123"></textarea>
             </div>
 
             <div class="form-check">
@@ -94,25 +109,20 @@
             <div class="mb-3">
               <label for="password1" class="form-label">Contraseña</label>
               <input type="password" class="form-control" id="password1" name="password1" required aria-describedby="password1Help">
-              <div id="passwordHelp" class="form-text">
+              <div id="passwordHelp" class="form-text" placeholder="12345678">
                 La contraseña debe tener entre 8 y 20 caracteres, 
                 y que esos caracteres sean letras, números, 
                 el símbolo @ o el guión.
               </div>
             </div>
 
-            <div class="mb-3">
-              <label for="password2" class="form-label">Repetir contraseña</label>
-              <input type="password" class="form-control" id="password2" name="password2" required pattern="^[\w@-]{8,20}$">
-              <div class="invalid-feedback">Las contraseñas no coinciden.</div>
-            </div>
           
           </div>
 
           <!-- foto cliente -->
-          <div class="col-sm-12 col-md-4 text-center" id="foto">
+          <div class=" col-sm-12 col-md-4 text-center " id="foto">
 
-              <img src="img/foto-perfil.jpg" alt="">
+              <img class="tam" src="img/foto.jpg" alt="">
               <br><br>
               <div class="mb-3">
                 <input class="form-control" type="file" id="file">
@@ -123,13 +133,14 @@
 
         <div class="row" id="botones">
           <div class="col text-center">
-            <button type="submit" class="btn btn-primary">Guardar</button>
-            <button type="reset" class="btn btn-primary">Limpiar</button>
+            <a href="mantenedorUsuarios.html" type="submit" class="btn btn-primary" >Guardar</a>
+            <button type="reset" class="btn btn-primary">Eliminar Usuario</button>
           </div>
         </div>
       </div>
     </form>
 
+    <br><br><br><br>
     
 
     <footer id="footer" class="position-fixed bottom-0 start-50 translate-middle-x">

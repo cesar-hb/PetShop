@@ -38,6 +38,10 @@ input[type="text"], input[type="password"], input[type="email"], input[type="fil
     
     border-width: 3px !important;
   }
+.tam{
+    width: 200px;
+    height: 200px;
+}
 /*
 div {
     border: 1px solid blue;
