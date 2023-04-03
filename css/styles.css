@@ -38,10 +38,10 @@ input[type="text"], input[type="password"], input[type="email"], input[type="fil
     
     border-width: 3px !important;
   }
-
+/*
 div {
     border: 1px solid blue;
-}/*
+}
 p{
     border: 1px solid red;
 }*/
