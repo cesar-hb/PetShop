@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
-    <title>PetShop - Administrar tienda</title>
+    <title>PetShop - Historial Global</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -29,20 +29,79 @@
         </div>
     </nav>
     
-    <br>
-    <h2 class="container-fluid"> &nbsp&nbsp&nbsp Administrar Tienda</h2>
-    <br>
-    <div class="container-fluid pad ">
-        <div class="row justify-content-start col-lg-4 ">
-
-            <ul class="list-group">
-                <a href="mantenedorUsuarios.html" class="list-group-item list-group-item-action">Mantenedor de Usuarios</a>
-                <a href="mantenedorProductos.html" class="list-group-item list-group-item-action">Mantenedor de Productos</a>
-                <a href="historialVentas.html" class="list-group-item list-group-item-action">Historial de Ventas</a>
-                <a href="mantenedorBodega.html" class="list-group-item list-group-item-action">Mantenedor de Bodega</a>
-            </ul>
+    <main role="Main">
+        <div class="container">
+            <section class="text-center">
+                <h1>Historial de ventas</h1>
+                <br>
+                <table class="table table-hover">
+                    <thead>
+                        <th scope="col">ID boleta</th>
+                        <th scope="col" class="d-none d-lg-block d-lg-table-cell">Fecha emisión</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col" class="text-end ">Descuentos</th>
+                        <th scope="col" class="text-end d-none d-lg-block d-lg-table-cell">Total</th>
+                        <th scope="col">Opciones</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">1</td>
+                            <td scope="col" class="d-none d-lg-block d-lg-table-cell">22/03/2022</td>
+                            <td scope="col">$75.052</td>
+                            <td scope="col" class="text-end">$5.000</td>
+                            <td scope="col" class="text-end">$70.052</td>
+                            <td scope="col">
+                                <button type="button" href="#" class="btn btn-outline-secondary" disabled>
+                                    Eliminar
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row">2</td>
+                            <td scope="col" class="d-none d-lg-block d-lg-table-cell">23/03/2022</td>
+                            <td scope="col">$20.652</td>
+                            <td scope="col" class="text-end">$4.000</td>
+                            <td scope="col" class="text-end">$16.652</td>
+                            <td scope="col">
+                                <button type="button" href="#" class="btn btn-outline-secondary" disabled>
+                                    Eliminar
+                                </button>
+                            </td>
+                        </tr>
+                        <tfoot>
+                            <tr>
+                                <tr>
+                                    <td scope="row"></td>
+                                    <td scope="col" class="d-none d-lg-block d-lg-table-cell"></td>
+                                    <td scope="col"></td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
+                                    <td scope="col" class="text-end ">Total descuentos</td>
+                                    <td scope="col" class="text-end">$9.000</td>
+                                    <td scope="col"></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td scope="row"></td>
+                                    <td scope="col" class="d-none d-lg-block d-lg-table-cell"></td>
+                                    <td scope="col"></td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
+                                    <td scope="col" class="text-end d-none d-lg-block d-lg-table-cell"></td>
+                                    <td scope="col" class="text-end">Total ingresos</td>
+                                    <td scope="col" class="text-end">$86.704</td>
+                                    <td scope="col"></td>
+                                </tr>
+                            </tr>
+                        </tfoot>
+                    </tbody>
+                </table>
+            </section>
         </div>
-    </div>
+    </main>
 
     <footer id="footer" class="position-fixed bottom-0 start-50 translate-middle-x">
         <br>

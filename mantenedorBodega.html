@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
-    <title>PetShop - Administrar tienda</title>
+    <title>PetShop - Mantenedor Bodega</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -29,20 +29,61 @@
         </div>
     </nav>
     
-    <br>
-    <h2 class="container-fluid"> &nbsp&nbsp&nbsp Administrar Tienda</h2>
-    <br>
-    <div class="container-fluid pad ">
-        <div class="row justify-content-start col-lg-4 ">
-
-            <ul class="list-group">
-                <a href="mantenedorUsuarios.html" class="list-group-item list-group-item-action">Mantenedor de Usuarios</a>
-                <a href="mantenedorProductos.html" class="list-group-item list-group-item-action">Mantenedor de Productos</a>
-                <a href="historialVentas.html" class="list-group-item list-group-item-action">Historial de Ventas</a>
-                <a href="mantenedorBodega.html" class="list-group-item list-group-item-action">Mantenedor de Bodega</a>
-            </ul>
+    <div class="container-fluid">
+        <div class="justify-content-center pad">
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">SKU</th>
+                <th scope="col">Descriptor</th>
+                <th scope="col">Stock</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Proveedor</th>
+                <th scope="col">Pasillo/Rack/Nivel</th>
+                <th scope="col">Opciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">MD-18-C-A</th>
+                <td>Saco alimento Master Dog18 kilos, savor carne, adultos</td>
+                <td>30</td>
+                <td>$23.990</td>
+                <td>Cachorritos SPA</td>
+                <td>P3/R5/N1</td>
+                <td><a href="#">Editar datos</a></td>
+              </tr>
+              <tr>
+                <th scope="row">DC-18-CP-A</th>
+                <td>Saco alimento Dog Chow18 kilos, savor carne y pollo, adultos</td>
+                <td>55</td>
+                <td>$24.460</td>
+                <td>Cachorritos SPA</td>
+                <td>P3/R8/N2</td>
+                <td><a href="#">Editar datos</a></td>
+              </tr>
+              <tr>
+                <th scope="row">C-18-CCE-A</th>
+                <td>Saco alimento Cannes 18 kilos, savor carne y cereales, adultos</td>
+                <td>14</td>
+                <td>$32.000</td>
+                <td>Pellets e inversiones ltda</td>
+                <td>P3/R5/N2</td>
+                <td><a href="#">Editar datos</a></td>
+              </tr>
+              <tr>
+                <th scope="row">P-15-CPCE-A</th>
+                <td>Saco alimento Pedigree 15 kilos, savor carne, pollo y cereales, adultos</td>
+                <td>22</td>
+                <td>$22.000</td>
+                <td>Pellets e inversiones ltda</td>
+                <td>P3/R8/N1</td>
+                <td><a href="#">Editar datos</a></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-    </div>
+      </div>
 
     <footer id="footer" class="position-fixed bottom-0 start-50 translate-middle-x">
         <br>
