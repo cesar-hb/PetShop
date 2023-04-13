@@ -30,44 +30,156 @@
     </nav>
     <br>
     <h2 class="container-fluid"> &nbsp&nbsp&nbspMantenedor de usuarios</h2>
-    <br>
+    <br><br><br>
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-4" id="datos">
+
+            <div class="mb-3">
+              <label for="id" class="form-label">ID</label>
+              <input type="text" class="form-control" 
+                  id="id" aria-describedby="idHelp">
+            </div>
+
+            <div class="mb-3">
+              <p>Tipo Usuario</p>
+              <input type="radio" id="cliente" value="u">
+              <label for="cliente">Cliente</label>
+              <input type="radio" id="administrador" value="a">
+              <label for="administrador">Administrador</label>
+            </div>
+
+            <div class="mb-3">
+              <label for="rut" class="form-label">RUT</label>
+              <input required placeholder="Ej 10123123-K" type="text" class="form-control" 
+                  id="rut" aria-describedby="rutHelp">
+              <div id="rutHelp" class="form-text">
+                Escribe el RUT sin puntos y con guión.
+              </div>
+              <div class="invalid-feedback">
+                El campo RUT es obligatorio
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="nombres" class="form-label">Nombres</label>
+              <input required type="text" class="form-control" id="nombres">
+              <div class="invalid-feedback">
+                El campo Nombre es obligatorio
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="apellidos" class="form-label">Apellidos</label>
+              <input required type="text" class="form-control" 
+                  id="apellidos">
+              <div class="invalid-feedback">
+                El campo Apellidos es obligatorio
+              </div>
+            </div>
+            
+            <div class="mb-3">
+              <label for="correo" class="form-label">Correo</label>
+              <input required type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
+              <div class="invalid-feedback">
+                El campo Correo es obligatorio
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="direccion" class="form-label">Dirección</label>
+              <textarea required class="form-control" id="direccion" rows="3"></textarea>
+              <div class="invalid-feedback">
+                El campo Dirección es obligatorio
+              </div>
+            </div>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="subscripcion">
+              <label class="form-check-label" for="subscripcion">
+                Con subscripción
+              </label>
+            </div>
+            <br>
+            <div class="mb-3">
+              <label for="password1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control col-md-6" id="password1" name="password1" required aria-describedby="password1Help">
+              <a href="cuenta.html" type="submit" class="btn btn-primary botonGenerarContraseña">Generar Contraseña</a>
+              <div id="passwordHelp" class="form-text">
+                La contraseña debe tener entre 8 y 20 caracteres, 
+                y que esos caracteres sean letras, números, 
+                el símbolo @ o el guión.
+              </div>
+            </div>       
+          </div>
+
+          <!-- foto cliente -->
+          <div class="col-sm-12 col-md-4 text-center" id="foto">
+              <img src="img/foto-perfil.jpg" alt="">
+              <br><br>
+              <div class="mb-3">
+                <input class="form-control" type="file" id="file">
+              </div>
+              <div>
+                <img src="img/foto.jpg" alt="" class="marco-foto">
+              </div>
+          </div>
+        </div>
+
+        <div class="row" id="botones">
+          <div class="col text-center">
+            <a href="mantenedorUsuarios.html" type="submit" class="btn btn-primary">Guardar</a>
+            <a href="mantenedorUsuarios.html" type="reset" class="btn btn-primary">Nuevo</a>
+            <a href="mantenedorUsuarios.html" type="reset" class="btn btn-primary">Eliminar</a>
+          </div>
+        </div>
+      </div>
+    </form>
     <div class="container-fluid">
         <div class="justify-content-center pad">
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">Nombre usuario</th>
-                <th scope="col">Fecha registro</th>
-                <th scope="col">Estado de cuenta</th>
+                <th scope="col">ID</th>
+                <th scope="col">Tipo Usuario</th>
+                <th scope="col">Rut</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Apellidos</th>
                 <th scope="col">Correo</th>
-                <th scope="col">Subscripción</th>
-                <th scope="col">Opciones</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Con subscripción</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">Ivan</th>
-                <td>15/03/22</td>
-                <td>Activa</td>
-                <td>ivanazo@gmail.com</td>
+                <th scope="row">1</th>
+                <td>Administrador</td>
+                <td>12.345.586-K</td>
+                <td>Juan</td>
+                <td>Perez</td>
+                <td>juanito@gmail.com</td>
+                <td>Av España 452</td>
                 <td>Sí</td>
-                <td><a href="editarUsuarioAdmin.html">Editar datos</a></td>
               </tr>
               <tr>
-                <th scope="row">Victor</th>
-                <td>24/02/22</td>
-                <td>Inactiva</td>
-                <td>Viktorcl@gmail.com</td>
+                <th scope="row">2</th>
+                <td>Usuario</td>
+                <td>13.546.375-4</td>
+                <td>Carlos</td>
+                <td>Soto</td>
+                <td>carlanga@gmail.com</td>
+                <td>Av Cristobal Colon 15400</td>
                 <td>No</td>
-                <td><a href="#">Editar datos</a></td>
               </tr>
               <tr>
-                <th scope="row">Cesar</th>
-                <td>26/03/22</td>
-                <td>Activa</td>
-                <td>bailensincesar@gmail.com</td>
-                <td>No</td>
-                <td><a href="#">Editar datos</a></td>
+                <th scope="row">3</th>
+                <td>Usuario</td>
+                <td>24.587.369-6</td>
+                <td>Diego</td>
+                <td>Mandiola</td>
+                <td>diegazo@gmail.com</td>
+                <td>Av Macul 345</td>
+                <td>Sí</td>
               </tr>
             </tbody>
           </table>
