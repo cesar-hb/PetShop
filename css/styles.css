@@ -42,6 +42,13 @@ input[type="text"], input[type="password"], input[type="email"], input[type="fil
     width: 200px;
     height: 200px;
 }
+
+.marco-foto{
+    width: 300px;
+    border: 15px solid purple;
+    height: 300px;
+    object-fit: contain;
+}
 /*
 div {
     border: 1px solid blue;
