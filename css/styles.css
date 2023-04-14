@@ -49,6 +49,10 @@ input[type="text"], input[type="password"], input[type="email"], input[type="fil
     height: 300px;
     object-fit: contain;
 }
+.tama{
+    width: 40px;
+    background-color:rgb(255, 255, 255);
+}
 /*
 div {
     border: 1px solid blue;
