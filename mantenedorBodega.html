@@ -28,59 +28,99 @@
           </div>
         </div>
     </nav>
-    
+     
     <div class="container-fluid">
         <div class="justify-content-center pad">
           <h1>Mantenedor de bodega</h1>
-          <br><br><br>
+          <br><br>
+
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="container-fluid">
+              <div class="row justify-content-left">
+                <div class="col-sm-12 col-md-4" id="datos">
+
+                  <div class="col-12">
+                    <div>
+                      <label for="categoria" class="form-label">Categoría:</label>
+                      <select class="form-select">
+                          <option selected>...</option>
+                          <option value="1">Perros</option>
+                          <option value="2">Gatos</option>
+                          <option value="3">Otros</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label for="nombre" class="form-label">Nombre:</label>
+                      <select class="form-select" id="nombre">
+                          <option selected>...</option>
+                          <option value="1">Saco alimento Master Dog</option>
+                          <option value="2">Saco alimento Dog Chow</option>
+                          <option value="3">Saco alimento Cannes</option>
+                      </select>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="cantidad" class="form-label">Cantidad:</label>
+                      <input type="text" class="form-control" id="cantidad">
+                    </div>
+                  </div> 
+                  
+              <div class="row" id="botones">
+                <div class="col text-center">
+                  <a href="mantenedorBodega.html" type="submit" class="btn btn-primary" >Nuevo</a>
+                  <button type="reset" class="btn btn-primary">Agregar</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-md-4" id="foto">
+              <div>
+                <img src="img/cajas_carton.webp" alt="" class="marco-foto">
+              </div>
+              <br><br>
+          </div>
+      </div>
+          </form>
+
           <table class="table">
             <thead>
               <tr>
-                <th scope="col">SKU</th>
-                <th scope="col">Descriptor</th>
-                <th scope="col">Stock</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Proveedor</th>
-                <th scope="col">Pasillo/Rack/Nivel</th>
+                <th scope="col">ID</th>
+                <th scope="col">Categoría</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Estado</th>
                 <th scope="col">Opciones</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="row">MD-18-C-A</th>
-                <td>Saco alimento Master Dog18 kilos, savor carne, adultos</td>
-                <td>30</td>
-                <td>$23.990</td>
-                <td>Cachorritos SPA</td>
-                <td>P3/R5/N1</td>
-                <td><a href="editarBodega.html">Editar datos</a></td>
+                <th scope="row">23</th>
+                <td>Perros</td>
+                <td>Saco alimento Master Dog 18 kilos</td>
+                <td>Vendido</td>
+                <td><a href="mantenedorBodega.html">Eliminar</a></td>
               </tr>
               <tr>
-                <th scope="row">DC-18-CP-A</th>
-                <td>Saco alimento Dog Chow18 kilos, savor carne y pollo, adultos</td>
-                <td>55</td>
-                <td>$24.460</td>
-                <td>Cachorritos SPA</td>
-                <td>P3/R8/N2</td>
-                <td><a href="#">Editar datos</a></td>
+                <th scope="row">25</th>
+                <td>Perros</td>
+                <td>Saco alimento Dog Chow 18 kilos</td>
+                <td>En bodega</td>
+                <td><a href="mantenedorBodega.html">Eliminar</a></td>
               </tr>
               <tr>
-                <th scope="row">C-18-CCE-A</th>
-                <td>Saco alimento Cannes 18 kilos, savor carne y cereales, adultos</td>
-                <td>14</td>
-                <td>$32.000</td>
-                <td>Pellets e inversiones ltda</td>
-                <td>P3/R5/N2</td>
-                <td><a href="#">Editar datos</a></td>
+                <th scope="row">27</th>
+                <td>Perros</td>
+                <td>Saco alimento Cannes 18 kilos</td>
+                <td>En bodega</td>
+                <td><a href="mantenedorBodega.html">Eliminar</a></td>
               </tr>
               <tr>
-                <th scope="row">P-15-CPCE-A</th>
-                <td>Saco alimento Pedigree 15 kilos, savor carne, pollo y cereales, adultos</td>
-                <td>22</td>
-                <td>$22.000</td>
-                <td>Pellets e inversiones ltda</td>
-                <td>P3/R8/N1</td>
-                <td><a href="#">Editar datos</a></td>
+                <th scope="row">30</th>
+                <td>Perros</td>
+                <td>Saco alimento Pedigree 15 kilos</td>
+                <td>Entregado</td>
+                <td><a href="mantenedorBodega.html">Eliminar</a></td>
               </tr>
             </tbody>
           </table>
@@ -89,7 +129,7 @@
       <div class="pad">
         <a href="administrarTienda.html" type="submit" class="btn btn-primary" >Volver</a>
       </div>
-    <br><br><br><br>
+      
     <!-- Footer -->
     <footer id="footer" >
       <br>
