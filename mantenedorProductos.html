@@ -29,56 +29,129 @@
     </nav>
     
     <br>
-    <h2 class="container-fluid"> &nbsp&nbsp&nbspProductos</h2>
+    <h2 class="container-fluid"> &nbsp&nbsp&nbspMantenedor de Productos</h2>
     <br>
     
-    
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="container-fluid">
+        
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-4" id="datos">
+
+            <div class="mb-3">
+              <label for="ID" class="form-label">ID</label>
+              <input type="text" class="form-control" id="id">
+            </div>
+
+            <label for="idUsuario" class="form-label">Categoría:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>...</option>
+                    <option value="1">Perros</option>
+                    <option value="2">Gatos</option>
+                    <option value="3">Otros</option>
+                </select>
+            
+            <div class="mb-3">
+              <label for="nombres" class="form-label">Nombre</label>
+              <input required type="text" class="form-control" id="nombres">
+              <div class="invalid-feedback">
+                El campo Nombre es obligatorio
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="descripcion" class="form-label">Descripción</label>
+              <textarea class="form-control" id="descripcion" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="precio" class="form-label">Precio</label>
+              <input required type="text" class="form-control" id="precio">
+            </div>
+            
+            <div class="mb-3">
+              <label for="desc_subscriptor" class="form-label">Descuento Subscriptor</label>
+              <input required type="text" class="form-control" id="desc_subscriptor">
+            </div>
+
+            <div class="mb-3">
+              <label for="desc_oferta" class="form-label">Descuento Oferta</label>
+              <input required type="text" class="form-control" id="desc_oferta">
+            </div>
+          </div>
+
+          <!-- foto cliente -->
+          <div class="col-sm-12 col-md-4 text-center" id="foto">
+              <br><br>
+              <div class="mb-3">
+                <input class="form-control" type="file" id="file">
+              </div>
+              <div>
+                <img src="img/cajas_carton.webp" alt="" class="marco-foto">
+              </div>
+          </div>
+        </div>
+
+        <div class="row" id="botones">
+          <div class="col text-center">
+            <a href="cuenta.html" type="submit" class="btn btn-primary">Guardar</a>
+            <button type="reset" class="btn btn-primary">Nuevo</button>
+            <button type="reset" class="btn btn-primary">Eliminar</button>
+          </div>
+        </div>
+      </div>
+    </form>
     
     <div class="container-fluid">
       <div class="justify-content-center pad">
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Nombre producto</th>
-              <th scope="col">SKU</th>
-              <th scope="col">Descriptor</th>
+              <th scope="col">ID</th>
+              <th scope="col">Categoría</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Descripción</th>
               <th scope="col">Precio</th>
-              <th scope="col">En oferta</th>
-              <th scope="col">Opciones</th>
+              <th scope="col">% Desc. Subscriptor</th>
+              <th scope="col">% Desc. Oferta</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <th scope="row">Saco alimento Master Dog</th>
-              <td>MD-18-C-A</td>
+              <th scope="row">23</th>
+              <td>Perros</td>
+              <td>Saco Master Dog </td>
               <td>Saco de 18 kilos, savor carne, adultos</td>
               <td>$23.990</td>
-              <td>No</td>
-              <td><a href="editorProductos.html">Editar datos</a></td>
+              <td>5%</td>
+              <td>2%</td>
             </tr>
             <tr>
-              <th scope="row">Saco alimento Dog Chow</th>
-              <td>DC-18-CP-A</td>
+              <th scope="row">25</th>
+              <td>Perros</td>
+              <td>Saco Royal Canin</td>
               <td>Saco de 18 kilos, savor carne y pollo, adultos</td>
               <td>$24.460</td>
-              <td>No</td>
-              <td><a href="#">Editar datos</a></td>
+              <td>5%</td>
+              <td>2%</td>
             </tr>
             <tr>
-              <th scope="row">Saco alimento Cannes</th>
-              <td>C-18-CCE-A</td>
+              <th scope="row">19</th>
+              <td>Perros</td>
+              <td>Saco alimeno Cannes</td>
               <td>Saco de 18 kilos, savor carne y cereales, adultos</td>
               <td>$30.000</td>
-              <td>Sí</td>
-              <td><a href="#">Editar datos</a></td>
+              <td>5%</td>
+              <td>6%</td>
             </tr>
             <tr>
-              <th scope="row">Saco alimento Pedigree</th>
-              <td>P-15-CPCE-A</td>
+              <th scope="row">22</th>
+              <td>Perros</td>
+              <td>Saco alimento Pedigree</td>
               <td>Saco de 15 kilos, savor carne, pollo y cereales, adultos</td>
-              <td>$22.000</td>
-              <td>No</td>
-              <td><a href="#">Editar datos</a></td>
+              <td>$24.340</td>
+              <td>5%</td>
+              <td>4%</td>
             </tr>
           </tbody>
         </table>
@@ -87,7 +160,7 @@
     <div class="pad">
       <a href="administrarTienda.html" type="submit" class="btn btn-primary" >Volver</a>
     </div>
-    <br><br><br>
+    <br>
     
     <!-- Footer -->
     <footer id="footer" >
