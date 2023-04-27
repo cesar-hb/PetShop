@@ -22,7 +22,9 @@
     vertical-align: middle;
 }
 .producto {
-    width: 100%;
+    width: 50%;
+    height: 50%;
+    object-fit:scale-down;
 }
 .oferta{
     color:dodgerblue;
