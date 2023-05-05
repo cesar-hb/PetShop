@@ -1,4 +1,4 @@
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+/* Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
     'use strict'
   
@@ -49,6 +49,17 @@
     myInput.focus()
   })
   
+*/
 
-  
+$(document).ready(function() {
+
+  $.validator.addMethod("rut.Cl", function(value, element){
+    value = value.replace(/[.-]/g, "");
+    if (value.length < 8 || value.length > 9) {
+      return false;
+    }
+    
+  }
+}
+
 
