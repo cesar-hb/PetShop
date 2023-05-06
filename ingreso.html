@@ -44,22 +44,16 @@
         <div class="row justify-content-center">
           <div class="col-sm-6 col-md-4" id="datos">
 
-            
-            
-          
-            
+
             <div class="mb-3">
-              <label for="correo" class="form-label">Correo</label>
-              <input required type="email" id="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
-              <div class="invalid-feedback">
-                El campo Correo es obligatorio
-              </div>
+              <label for="email" class="form-label">Correo</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="nombre@ejemplo.com">
             </div>
 
             
             <div class="mb-3">
-              <label for="password3" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password3" name="password3" required aria-describedby="password3Help">
+              <label for="password1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password1" name="password1" required aria-describedby="password3Help">
               <div id="password3Help" class="form-text">
                 La contraseña debe tener entre 8 y 20 caracteres, 
                 y que esos caracteres sean letras, números, 
@@ -69,7 +63,7 @@
 
               <div class="row">
                 <div class="col text-center">
-                  <a href="inicioCliente.html" type="submit" class="btn btn-primary">Ingresar</a>
+                  <button id="ingresar" type="submit" class="btn btn-primary">Ingresar</button>
                 </div>
               </div>
 
