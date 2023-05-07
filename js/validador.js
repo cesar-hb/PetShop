@@ -28,12 +28,11 @@ $(document).ready(function() {
     $("#ingresar").click(function () { 
       if ($("#formularioIngreso").valid()) {
         // El formulario es válido, redirigir al usuario a la página siguiente
-        window.location.href = "inicioCliente.html";
+        let email = $("#email").val();
+        window.location.href = "../inicioCliente.html";
       } else {
         // El formulario no es válido, mostrar un mensaje de error
         alert("Por favor, completa correctamente los campos obligatorios.");
-      }
-      
-      
+      }      
     });
 });
