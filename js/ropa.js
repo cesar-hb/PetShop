@@ -7,7 +7,7 @@ $(document).ready(function() {
             <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 pad-b">
                 <img class="producto" src="` + item.image + `"  alt="">
                 <p class="fs-5"> $` + item.price +  `</p> 
-                <p><h1>` + item.title + `</h1><br>
+                <p><b>` + item.title + `</b><br>
                 <b>Descripción:</b>
                 ` + item.description +`</p> 
             </div>
