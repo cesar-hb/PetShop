@@ -63,7 +63,7 @@ $(document).ready(function() {
         categoria:{
           required: "Este campo es obligatorio",
         },
-        nombres:{
+        nombre:{
           required: "Este campo es obligatorio",
           minlength: "El debe tener al menos 2 carácteres",
           maxlength: "El debe tener a lo más 25 carácteres",
