@@ -41,50 +41,58 @@
 
             <div class="mb-3">
               <label for="rut" class="form-label">RUT</label>
-              <input required placeholder="Ej 10123123-K" type="text" class="form-control" 
-                  id="rut" aria-describedby="rutHelp">
+              <input placeholder="10123123-K" 
+                type="text" 
+                class="form-control" 
+                id="rut" 
+                name="rut"
+                aria-describedby="rutHelp">
               <div id="rutHelp" class="form-text">
-                Escribe el RUT sin puntos y con guión.
-              </div>
-              <div class="invalid-feedback">
-                El campo RUT es obligatorio
+                RUT sin puntos y con guión.
               </div>
             </div>
 
             <div class="mb-3">
               <label for="nombres" class="form-label">Nombres</label>
-              <input required type="text" class="form-control" id="nombres">
-              <div class="invalid-feedback">
-                El campo Nombre es obligatorio
-              </div>
+              <input type="text" 
+              class="form-control" 
+              id="nombres" 
+              name="nombres"
+              value="Homer J.">
             </div>
+
             <div class="mb-3">
               <label for="apellidos" class="form-label">Apellidos</label>
-              <input required type="text" class="form-control" 
-                  id="apellidos">
-              <div class="invalid-feedback">
-                El campo Apellidos es obligatorio
-              </div>
+              <input type="text" 
+                class="form-control" 
+                id="apellidos"
+                name="apellidos"
+                value="Simpson">
             </div>
             
             <div class="mb-3">
               <label for="correo" class="form-label">Correo</label>
-              <input required type="email" class="form-control" id="correo" placeholder="nombre@ejemplo.com">
-              <div class="invalid-feedback">
-                El campo Correo es obligatorio
-              </div>
+              <input type="email" 
+                class="form-control" 
+                id="correo" 
+                name="correo"
+                value="nombre@ejemplo.com">
             </div>
 
             <div class="mb-3">
               <label for="direccion" class="form-label">Dirección</label>
-              <textarea required class="form-control" id="direccion" rows="3"></textarea>
-              <div class="invalid-feedback">
-                El campo Dirección es obligatorio
-              </div>
+              <textarea class="form-control" 
+                id="direccion" 
+                name="direccion"
+                rows="3">Evergreen Terrace 742, Springfield</textarea>
             </div>
 
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="subscripcion">
+              <input class="form-check-input" 
+                type="checkbox" 
+                value="" 
+                id="subscripcion"
+                name="subscripcion">
               <label class="form-check-label" for="subscripcion">
                 Con subscripción
               </label>
@@ -92,9 +100,20 @@
             <br>
             <div class="mb-3">
               <label for="password1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control col-md-6" id="password1" name="password1" required aria-describedby="password1Help">
-              <a href="cuenta.html" type="submit" class="btn btn-primary botonGenerarContraseña">Generar Contraseña</a>
-              <div id="passwordHelp" class="form-text">
+              <input type="text" 
+                class="form-control col-md-6" 
+                id="password1" 
+                name="password1" 
+                aria-describedby="password1Help"
+                value="12345678">
+              <button type="submit" 
+                class="btn btn-primary botonGenerarContraseña" 
+                id="generarPassword" 
+                name="generarPassword">
+                Generar Contraseña
+              </button>
+              
+                <div id="passwordHelp" class="form-text">
                 La contraseña debe tener entre 8 y 20 caracteres, 
                 y que esos caracteres sean letras, números, 
                 el símbolo @ o el guión.

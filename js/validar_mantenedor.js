@@ -33,7 +33,8 @@ $(document).ready(function() {
         // Validar que el dígito verificador sea correcto
         return dv === lastChar;
       }, "Por favor ingrese un RUT válido."); 
- 
+
+    
     $("#formularioMantUser").validate({
       rules: {
         rut:{
@@ -64,11 +65,9 @@ $(document).ready(function() {
           required: true,
           minlength: 8,
           maxlength: 20,
+          value: generarContrasena
         },
-        password2: {
-            required: true,
-            equalTo: "#password1",
-        },
+
       }, // --> Fin de reglas
       messages: {
         rut:{
@@ -107,6 +106,17 @@ $(document).ready(function() {
       },
     });
 
+    $("#generarPassword").click(function(){
+        function generatePassword() {
+            const length = 8; // longitud de la contraseña
+            const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+"; // caracteres permitidos
+            let password = "";
+            for (let i = 0, n = charset.length; i < length; ++i) {
+              password += charset.charAt(Math.floor(Math.random() * n));
+            }
+            document.getElementById("password").innerHTML = "Contraseña generada: " + password;
+          }
+    });
      
     $("#guardar").click(function () { 
       if ($("#formularioMantUser").valid()) {
