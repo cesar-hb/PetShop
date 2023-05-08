@@ -1,13 +1,13 @@
 function generarContrasena() {
-    var caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
-    var longitud = Math.floor(Math.random() * (20 - 8 + 1)) + 8; // longitud aleatoria entre 8 y 20 caracteres
+    var caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_.,";
+    var longitud = 8; 
     var contrasena = "";
     for (var i = 0; i < longitud; i++) {
       var indice = Math.floor(Math.random() * caracteres.length);
       contrasena += caracteres.charAt(indice);
     }
-    return contrasena;
-  }
+    password1.innerHTML = contrasena;
+  }    
 $(document).ready(function() {
     
     $.validator.addMethod("rutChile", function(value, element) {
@@ -75,7 +75,7 @@ $(document).ready(function() {
           required: true,
           minlength: 8,
           maxlength: 20,
-          value: generarContrasena
+          value:generarContrasena,
         },
 
       }, // --> Fin de reglas
@@ -116,15 +116,14 @@ $(document).ready(function() {
       if ($("#formularioMantUser").valid()) {
         // El formulario es válido, redirigir al usuario a la página siguiente
         alert("Datos guardados");
-        window.location.href = "../mantenedorUsusarios.html";
-        //if (confirm("Desea guadar los datos?")){
-            
-        //}
-        
+        window.location.href = "../mantenedorUsuarios.html";
       } else {
         // El formulario no es válido, mostrar un mensaje de error
         alert("Por favor, completa correctamente los campos obligatorios.");
       }      
     });
-    
+    $("#eliminar").click(function () { 
+        alert("Datos eliminados");
+        window.location.href = "../mantenedorUsusarios.html";
+    });
 });

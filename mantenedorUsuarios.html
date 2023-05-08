@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/scripts.js"></script>
     <title>PetShop - Administrar usuarios</title>
+    <style>
+      .error {
+        color: red;
+      }
+    </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar-div">
@@ -41,7 +46,7 @@
 
             <div class="mb-3">
               <label for="rut" class="form-label">RUT</label>
-              <input placeholder="10123123-K" 
+              <input value="12345586-K" 
                 type="text" 
                 class="form-control" 
                 id="rut" 
@@ -58,7 +63,7 @@
               class="form-control" 
               id="nombres" 
               name="nombres"
-              value="Homer J.">
+              value="Juan">
             </div>
 
             <div class="mb-3">
@@ -67,7 +72,7 @@
                 class="form-control" 
                 id="apellidos"
                 name="apellidos"
-                value="Simpson">
+                value="Perez">
             </div>
             
             <div class="mb-3">
@@ -76,7 +81,7 @@
                 class="form-control" 
                 id="correo" 
                 name="correo"
-                value="nombre@ejemplo.com">
+                value="juanito@gmail.com">
             </div>
 
             <div class="mb-3">
@@ -84,7 +89,7 @@
               <textarea class="form-control" 
                 id="direccion" 
                 name="direccion"
-                rows="3">Evergreen Terrace 742, Springfield</textarea>
+                rows="3">Av España 452, Santiago</textarea>
             </div>
 
             <div class="form-check">
@@ -92,7 +97,7 @@
                 type="checkbox" 
                 value="" 
                 id="subscripcion"
-                name="subscripcion">
+                name="subscripcion" checked>
               <label class="form-check-label" for="subscripcion">
                 Con subscripción
               </label>
@@ -107,10 +112,9 @@
                 aria-describedby="password1Help"
                 value="12345678">
               <button type="submit" 
-                class="btn btn-primary botonGenerarContraseña" 
-                id="generarContrasena">
-                Generar Contraseña
-              </button>
+                onclick="generarContrasena();" 
+                class="btn btn-primary botonGenerarContraseña" >
+                Generar Contraseña</button>
               
                 <div id="passwordHelp" class="form-text">
                 La contraseña debe tener entre 8 y 20 caracteres, 
@@ -135,9 +139,9 @@
 
         <div class="row" id="botones">
           <div class="col text-center">
-            <a href="mantenedorUsuarios.html" type="submit" class="btn btn-primary">Guardar</a>
-            <a href="mantenedorUsuarios.html" type="reset" class="btn btn-primary">Nuevo</a>
-            <a href="mantenedorUsuarios.html" type="reset" class="btn btn-primary">Eliminar</a>
+            <a type="submit" class="btn btn-primary" id="guardar">Guardar</a>
+            <a type="reset" class="btn btn-primary">Nuevo</a>
+            <a type="reset" class="btn btn-primary" id="eliminar">Eliminar</a>
           </div>
         </div>
       </div>
@@ -207,7 +211,7 @@
     <script src="js/cargarcontenidoregistrado.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.10.0/jquery.validate.min.js"></script>
-    <script src="js/validador_mantenedor.js" type="text/javascript"></script>
+    <script src="js/validar_mantenedor.js" type="text/javascript"></script>
 </body>
 </html>
 
