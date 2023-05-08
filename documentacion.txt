@@ -1,0 +1,10 @@
+En la realización de la página, hemos utilizado los siguientes recursos:
+CDN:
+    - Bootstrap 5 https://getbootstrap.com/
+    - Jquery https://jquery.com/
+    - Raws de github para vincular el contenido: https://github.com/iahumadaz, 
+      https://github.com/cesar-hb/PetShop
+JS:
+    - Scripts locales.
+IMG:
+    - Imagenes de stock y productos del mercado.
