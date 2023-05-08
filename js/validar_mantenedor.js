@@ -1,3 +1,13 @@
+function generarContrasena() {
+    var caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
+    var longitud = Math.floor(Math.random() * (20 - 8 + 1)) + 8; // longitud aleatoria entre 8 y 20 caracteres
+    var contrasena = "";
+    for (var i = 0; i < longitud; i++) {
+      var indice = Math.floor(Math.random() * caracteres.length);
+      contrasena += caracteres.charAt(indice);
+    }
+    return contrasena;
+  }
 $(document).ready(function() {
     
     $.validator.addMethod("rutChile", function(value, element) {
@@ -34,7 +44,7 @@ $(document).ready(function() {
         return dv === lastChar;
       }, "Por favor ingrese un RUT válido."); 
 
-    
+
     $("#formularioMantUser").validate({
       rules: {
         rut:{
@@ -99,23 +109,7 @@ $(document).ready(function() {
             minlength: "Mínimo 8 caracteres",
             maxlength: "Máximo 20 caracteres",
         },
-        password2: {
-            required: "Repita la contraseña anterior",
-            equalTo: "Debe ser igual al campo contraseña",
-        },
       },
-    });
-
-    $("#generarPassword").click(function(){
-        function generatePassword() {
-            const length = 8; // longitud de la contraseña
-            const charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+"; // caracteres permitidos
-            let password = "";
-            for (let i = 0, n = charset.length; i < length; ++i) {
-              password += charset.charAt(Math.floor(Math.random() * n));
-            }
-            document.getElementById("password").innerHTML = "Contraseña generada: " + password;
-          }
     });
      
     $("#guardar").click(function () { 
@@ -132,4 +126,5 @@ $(document).ready(function() {
         alert("Por favor, completa correctamente los campos obligatorios.");
       }      
     });
+    
 });

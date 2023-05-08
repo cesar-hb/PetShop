@@ -1,3 +1,14 @@
+function generarContrasena() {
+    var caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+";
+    var longitud = Math.floor(Math.random() * (20 - 8 + 1)) + 8; // longitud aleatoria entre 8 y 20 caracteres
+    var contrasena = "";
+    for (var i = 0; i < longitud; i++) {
+      var indice = Math.floor(Math.random() * caracteres.length);
+      contrasena += caracteres.charAt(indice);
+    }
+    return contrasena;
+  }
+
 $(document).ready(function() {
     
     $.validator.addMethod("rutChile", function(value, element) {
