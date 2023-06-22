@@ -115,12 +115,8 @@ $(document).ready(function() {
     $("#guardar").click(function () { 
       if ($("#formularioMantUser").valid()) {
         // El formulario es válido, redirigir al usuario a la página siguiente
-        alert("Datos guardados");
         window.location.href = "../mantenedorUsuarios.html";
-      } else {
-        // El formulario no es válido, mostrar un mensaje de error
-        alert("Por favor, completa correctamente los campos obligatorios.");
-      }      
+      }    
     });
     $("#eliminar").click(function () { 
         alert("Datos eliminados");

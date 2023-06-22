@@ -94,11 +94,7 @@ $(document).ready(function() {
     $("#guardar").click(function () { 
       if ($("#formularioMantDatos").valid()) {
         // El formulario es válido, redirigir al usuario a la página siguiente
-        alert("Datos guardados");
         window.location.href = "../mantenedorProductos.html";
-      } else {
-        // El formulario no es válido, mostrar un mensaje de error
-        alert("Por favor, completa correctamente los campos obligatorios.");
-      }      
+      }     
     });
 });

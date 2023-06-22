@@ -120,15 +120,11 @@ $(document).ready(function() {
     $("#guardar").click(function () { 
       if ($("#formularioRegistro").valid()) {
         // El formulario es válido, redirigir al usuario a la página siguiente
-        alert("sus datos han sido guardados");
         window.location.href = "../cuenta.html";
         //if (confirm("Desea guadar los datos?")){
             
         //}
         
-      } else {
-        // El formulario no es válido, mostrar un mensaje de error
-        alert("Por favor, completa correctamente los campos obligatorios.");
-      }      
+      }     
     });
 });

@@ -57,11 +57,7 @@ $(document).ready(function() {
       $("#agregar").click(function () { 
         if ($("#formularioMantBodega").valid()) {
           // El formulario es válido, redirigir al usuario a la página siguiente
-          alert("Datos guardados");
           window.location.href = "../mantenedorBodega.html";
-        } else {
-          // El formulario no es válido, mostrar un mensaje de error
-          alert("Por favor, completa correctamente los campos obligatorios.");
-        }      
+        }   
       });
   });
